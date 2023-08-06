@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  myapp: 
+    hostname: client
+    image: node:18-alpine
+    restart: always # never drop the container unless it's intentional, 
+    container_name: app-frontend
+    command: sh -c "cd /app && yarn dev "
+    ports:
+      - 1999:3000
+    volumes:
+      - ./app:/app

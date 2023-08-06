@@ -1,0 +1,12 @@
+{
+  "name": "emmanuelodii.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "scripts": {
+    "dev": "docker-compose up",
+    "kill": "docker-compose down --remove-orphans"
+  },
+  "keywords": [],
+  "author": "Emmanuel odii",
+  "license": "ISC"
+}
