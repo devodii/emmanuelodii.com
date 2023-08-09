@@ -9,7 +9,7 @@ export const Footer = () => {
     <footer className="bg-[#030712] text-gray-200 py-6">
       <div className="container mx-auto px-8 lg:px-20 flex flex-col gap-6">
         <div className="flex justify-between items-start w-full  ">
-          <ProfileCard size="sm" className="font-normal text-base" />
+          <ProfileCard size="sm" className="font-normal text-[16px]" />
           <nav className="">
             <ul className="flex flex-col items-center gap-2">
               <li className="text-lg text-gray-100">

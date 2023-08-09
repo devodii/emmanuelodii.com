@@ -42,15 +42,15 @@ export const RecentBlogs = () => {
           {recentArticles.map((article: Article) => {
             const { date, issueNumber, title, href, shortContent } = article;
             return (
-              <Link key={date} href={`blogs/${href}`}>
-                <Card as={"li"} className="flex flex-col gap-2">
+              <Card as={"li"} key={date}>
+                <Link href={`blogs/${href}`} className="flex flex-col gap-2">
                   <h3 className="font-semibold text-xl text-gray-100">{`BIPW #${issueNumber}: ${title}`}</h3>
                   <span className="text-lg text-gray-400">{date}</span>
                   <article className="leading-6 text-gray-200">
                     {shortContent}
                   </article>
-                </Card>
-              </Link>
+                </Link>
+              </Card>
             );
           })}
         </Grid>

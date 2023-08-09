@@ -18,6 +18,7 @@ export const ProfileCard = ({
     className={clsx("flex items-center gap-4", size === "sm" && "gap-[8px]")}
   >
     <Image
+      
       src="/emmanuel.jpg"
       priority
       placeholder="blur"
@@ -35,7 +36,7 @@ export const ProfileCard = ({
 
 export const Header = ({}: Props) => {
   return (
-    <header className=" bg-[#030712]  text-white">
+    <header className=" bg-[#030712]  text-white sticky top-0">
       <div className="container flex flex-wrap items-center justify-between px-8 py-2 lg:px-20 lg:py-4 mx-auto">
         <ProfileCard size="lg" boldText={true} className="font-bold" />
         <nav>
