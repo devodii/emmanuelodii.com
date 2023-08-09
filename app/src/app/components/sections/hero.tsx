@@ -30,7 +30,7 @@ export const Hero = (props: Props) => {
         />
       </div>
 
-      <div className="md:w-1/2 border flex items-center justify-center ">
+      <div className="md:w-1/2 border flex items-start  ">
         <Image
           src="/emmanuel.png"
           placeholder="blur"
