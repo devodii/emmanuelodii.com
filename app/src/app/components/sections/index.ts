@@ -5,5 +5,5 @@ export { Footer } from "./footer";
 export { Homepage } from "./homepage";
 
 export { AboutMe } from "./about";
-
 export { ContactMe } from "./contact";
+export { Projects } from "./projects"

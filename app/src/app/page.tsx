@@ -1,6 +1,6 @@
 import { Homepage, StackSection } from "@/components/sections";
 import { RecentBlogs } from "./components/sections/recent-blog";
-import Projects from "./components/sections/projects";
+import { Projects } from "./components/sections";
 import { ConnectWithMe } from "./components/sections/connect-with-me";
 
 export default function Home() {
