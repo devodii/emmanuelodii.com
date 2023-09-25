@@ -3,7 +3,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Emmanuel odii",
+  title: "Emmanuel odii | Full stack developer",
   description:
     "Full stack developer (Typescript, Nest JS, Next JS) & Builder in public",
   keywords: [
