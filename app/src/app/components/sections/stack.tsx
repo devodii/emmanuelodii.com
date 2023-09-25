@@ -38,6 +38,7 @@ export const StackSection = memo(() => {
                 alt={`Emmanuel odii works with ${name}`}
                 width={80}
                 height={80}
+                className="w-10 h-10 md:w-14 md:h-14 lg:w-20 lg:h-20"
                 priority
               />
             </div>

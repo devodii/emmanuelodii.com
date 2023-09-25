@@ -1,7 +1,7 @@
 import React from "react";
 import { ProfileCard } from "./header";
 import Link from "next/link";
-import { FaLinkedinIn, FaTwitter, FaMedium, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaTwitter, FaGithub } from "react-icons/fa";
 import { BsMedium } from "react-icons/bs";
 
 export const Footer = () => {
@@ -25,15 +25,18 @@ export const Footer = () => {
           </nav>
         </div>
 
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col-reverse gap-2 md:flex-row items-center justify-between">
           <p>Copyrights &copy; {new Date().getFullYear()}, Emmanuel Odii </p>
 
           <ul className="flex gap-6">
             {[
-              { icon: <FaLinkedinIn />, url: "https://www.linkedin.com/" },
-              { icon: <FaTwitter />, url: "https://twitter.com/" },
-              { icon: <BsMedium />, url: "https://medium.com/" },
-              { icon: <FaGithub />, url: "https://github.com/" },
+              {
+                icon: <FaLinkedinIn />,
+                url: "https://www.linkedin.com/in/%F0%9F%87%B3%F0%9F%87%AC-emmanuel-odii-92239524b/",
+              },
+              { icon: <FaTwitter />, url: "https://twitter.com/devodii_" },
+              { icon: <BsMedium />, url: "https://medium.com/@emmanuelodii80" },
+              { icon: <FaGithub />, url: "https://github.com/devodii" },
             ].map((handle: any, index: number) => (
               <li key={index} className="list-none text-xl lg:text-2xl ">
                 <Link href={handle.url}>{handle.icon}</Link>

@@ -6,22 +6,22 @@ const socials: Record<string, any>[] = [
   {
     name: "Linkedin",
     icon: "/social/linkedin.png",
-    href: "",
+    href: "https://www.linkedin.com/in/%F0%9F%87%B3%F0%9F%87%AC-emmanuel-odii-92239524b/",
   },
   {
     name: "Twitter",
     icon: "/social/twitter.png",
-    href: "",
+    href: "https://twitter.com/devodii_",
   },
   {
     name: "Medium",
     icon: "/social/medium.png",
-    href: "",
+    href: "https://medium.com/@emmanuelodii80",
   },
   {
     name: "Github",
     icon: "/social/github.png",
-    href: "",
+    href: "https://github.com/devodii",
   },
 ];
 
@@ -44,15 +44,16 @@ export const ConnectWithMe = () => {
 
         <ul className="flex gap-8 mx-auto">
           {socials.map((social: Record<string, any>) => {
-            const { name, icon } = social;
+            const { name, icon, href } = social;
             return (
               <li key={name}>
-                <Link href={""}>
+                <Link href={href}>
                   <Image
                     width={70}
                     height={70}
                     alt={`Emmanuel odii on ${name}`}
                     src={icon}
+                    className="w-10 h-10 lg:w-16 lg:h-16 hover:-translate-y-2 transition-all duration-200 mb-6"
                   />
                 </Link>
               </li>

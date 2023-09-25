@@ -18,14 +18,11 @@ export const ProfileCard = ({
     className={clsx("flex items-center gap-4", size === "sm" && "gap-[8px]")}
   >
     <Image
-      
-      src="/emmanuel.jpg"
+      src="/head-profile.png"
       priority
-      placeholder="blur"
       alt="Emmanuel odii"
       width={55}
       height={55}
-      blurDataURL="/emmanuel.jpg"
       className={clsx("rounded-full", size === "sm" && "h-7 w-7")}
     />
     <strong className={clsx("tracking-wide text-xl", className)}>
